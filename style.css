@@ -151,6 +151,12 @@ nav a {
   color: white;
 }
 
+.play-icon {
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+
 .outline {
   background-color: transparent;
   color: white;
