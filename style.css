@@ -1,3 +1,9 @@
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,43 +18,43 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: space-between; /* Pushes Logo to left and Button to right */
+  justify-content: space-between; 
   align-items: center;
   padding: 20px 60px;
-  position: relative; /* Essential for the absolute centering below */
+  position: relative; 
 }
 
 .nav-links {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); /* Moves the menu back by half its width to center it */
+  transform: translateX(-50%); 
   display: flex;
-  gap: 20px; /* Modern way to add spacing between links */
+  gap: 20px; 
 }
 
-/* Remove the old margin-right you had on nav a */
+
 nav a {
   text-decoration: none;
   color: #334155;
-  white-space: nowrap; /* Prevents links from stacking on smaller screens */
+  white-space: nowrap; 
 }
 
 .nav-btn {
-  /* Layout from your specs */
+
   width: 164px;
   height: 44px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;          /* Added 'px' here */
-  padding: 12px 16px; /* Simplified notation */
+  gap: 10px;         
+  padding: 12px 16px; 
 
-  /* Visual Styles */
-  background-color: #469165; /* Standard dark color based on your body text */
+
+  background-color: #469165; 
   color: #ffffff;
   border: none;
-  border-radius: 6px;        /* Optional: adds a slight rounded corner */
+  border-radius: 6px;   
   cursor: pointer;
   font-weight: 600;
   font-size: 14px;
@@ -56,13 +62,415 @@ nav a {
 }
 
 .nav-btn img {
-  width: 16px;  /* Adjusting arrow size to fit the button height */
+  width: 16px;  
   height: auto;
-  margin-left: 0; /* Resetting previous margin since we use gap now */
+  margin-left: 0; 
 }
 
-/* Hover state for better UX */
+
 .nav-btn:hover {
   background-color: #334155;
 }
 
+.hero {
+
+  background-image: url('Image/hero-bg.png');
+  
+
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+
+  min-height: 80vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+.badge {
+  background-color: #f1f5f9;
+  color: #469165;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #30B868;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn {
+  height: 44px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+
+}
+
+.color-white{
+    color: #FFFFFF;
+}
+
+.primary {
+  background-color: #30B868;
+  color: white;
+}
+
+.outline {
+  background-color: transparent;
+  color: white;
+  width: 190px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn img {
+  height: 16px;
+}
+
+
+.problems {
+  width: 100%;
+  max-width: 1600px; 
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 44px;
+  padding: 80px 20px; 
+  background-color: #ffffff;
+}
+
+.problems h2 {
+  max-width: 1360px; 
+  min-height: 116px; 
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0; 
+}
+
+.problems .subtitle {
+  font-size: 18px;
+  color: #64748b;
+  text-align: center;
+  margin-top: -20px; 
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  width: 1360px;
+}
+
+.card {
+  width: 322px; 
+  height: 280px;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.card p {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.6;
+}
+.icon-container {
+  width: 48px;
+  height: 48px;
+  background-color: #ff5252; 
+  border-radius: 50%;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.icon-container img {
+  width: 24px;               
+  height: 24px;
+  margin-bottom: 0;         
+ 
+  filter: brightness(0) invert(1); 
+}
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.solution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: 100px 60px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+.solution-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.solution-image img {
+  max-width: 500px; 
+  height: auto;
+}
+
+
+.solution-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.solution-text small {
+  color: #30B868; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.solution-text h2 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.solution-text p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+
+.solution-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.solution-text li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: #0f172a;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.solution-text li img {
+  width: 20px;
+  height: 20px;
+}
+
+.cta {
+
+  width: 100%;
+  max-width: 1360px;
+  margin: 100px auto;
+  padding: 80px 40px;
+  
+
+  background-color: #f8f7f3; 
+  border-radius: 24px;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.cta h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.cta p {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+
+.cta .primary {
+  background-color: #469165; 
+  color: white;
+  padding: 14px 32px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(70, 145, 101, 0.3);
+}
+
+.cta .primary:hover {
+  background-color: #3a7a54;
+}
+
+.cta .primary img {
+  width: 18px;
+  filter: brightness(0) invert(1); 
+}
+
+
+.footer {
+  background-color: #001f3f; 
+  color: white;
+  padding: 60px 120px 30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo img {
+  height: 45px; 
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.social-links span {
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.social-links .icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links .icons img {
+  width: 20px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+
+.problems {
+  width: 100%;
+  max-width: 1360px;
+  margin: 100px auto; 
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  background-color: #ffffff;
+}
+
+.problems h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58px;
+  text-align: center;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
