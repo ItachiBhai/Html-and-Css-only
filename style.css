@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  color: #0f172a;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes Logo to left and Button to right */
+  align-items: center;
+  padding: 20px 60px;
+  position: relative; /* Essential for the absolute centering below */
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Moves the menu back by half its width to center it */
+  display: flex;
+  gap: 20px; /* Modern way to add spacing between links */
+}
+
+/* Remove the old margin-right you had on nav a */
+nav a {
+  text-decoration: none;
+  color: #334155;
+  white-space: nowrap; /* Prevents links from stacking on smaller screens */
+}
+
+.nav-btn {
+  /* Layout from your specs */
+  width: 164px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;          /* Added 'px' here */
+  padding: 12px 16px; /* Simplified notation */
+
+  /* Visual Styles */
+  background-color: #469165; /* Standard dark color based on your body text */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;        /* Optional: adds a slight rounded corner */
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+
+}
+
+.nav-btn img {
+  width: 16px;  /* Adjusting arrow size to fit the button height */
+  height: auto;
+  margin-left: 0; /* Resetting previous margin since we use gap now */
+}
+
+/* Hover state for better UX */
+.nav-btn:hover {
+  background-color: #334155;
+}
+
